@@ -4,10 +4,4 @@ platform :ios, '8.0'
 
 target 'HSDialog_Example' do
   pod 'HSDialog', :path => '../'
-
-  target 'HSDialog_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

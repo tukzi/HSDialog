@@ -1,0 +1,16 @@
+PODS:
+  - HSDialog (0.1.0)
+
+DEPENDENCIES:
+  - HSDialog (from `../`)
+
+EXTERNAL SOURCES:
+  HSDialog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HSDialog: 671e9529f0943996da7b6d99fa4a63ae486a5055
+
+PODFILE CHECKSUM: 378e9d9ed84fd4b3acb3f2752c199a0f4f79de7c
+
+COCOAPODS: 1.9.0

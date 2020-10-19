@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005BCC570D1C63C05C619B4D495FF80C /* HSDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CD67CCFC0F18F37EA25CCE9728D81F8 /* HSDialog.bundle */; };
+		1386F1D032FE0D9BA99983E9B5CEA4FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		42A5D9E1C04DC9A09AFC13FA48E7E96B /* YKDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC12F3F79973AE1A44BA3454A587CFC0 /* YKDialogView.m */; };
+		728AA132E08B29EACF523E3991628ADB /* YKDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D48E8497693DCEB97F20BB4A2724D30B /* YKDialog.m */; };
+		7771B4EBBEFDB0503CE37F46EB14677A /* YKDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE94012E5689C20683283D8DD65C057 /* YKDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90DDF4BF93167DD9976CBB3F1FA3FD9F /* HSDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B331E6D4163A6CDC18DD792F0CAA4 /* HSDialog-dummy.m */; };
+		97DE15F0D560A945323FCFCA0861D56E /* HSDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8737F8132FCC7262D9F5E95EB51819D /* HSDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B61EEA7DEE7E6D3BA646ABE3782477 /* Pods-HSDialog_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF25F3A17031900F185313689B603F2A /* Pods-HSDialog_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2F3A5E6A73E69274842B156BAE34E8F /* Pods-HSDialog_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC62C5C18897AAEF0FC7258CA6CBAEC7 /* Pods-HSDialog_Example-dummy.m */; };
+		D1460EFF788DE3EBB796DB5D7CC00DEA /* yk_dialog_close_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E746CA6B511DF1B75EEB57AC0D3E0031 /* yk_dialog_close_icon@2x.png */; };
+		ED19C8B13B1502C6417BF47C5BAA98D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F115F7CEF88C2B7C5192670AA320183F /* yk_dialog_close_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7528242C3030C1AE22DD896A064AB1 /* yk_dialog_close_icon@3x.png */; };
+		FCEB075171D1471987DD887A38A75550 /* YKDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6653D6DAEB7499AA09B8FE3EDF676BF8 /* YKDialogView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C581E49C2B1554A2258A578A4A0D7220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89707B8D9FFD4EBD3EF63F0307FC4A27;
+			remoteInfo = "HSDialog-HSDialog";
+		};
+		C6E5B169EFB9AE040B13DB6DAB4ED331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443C9450A1B792186930266EAC00E202;
+			remoteInfo = HSDialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05DCFC6E1C9C9D6B2324539C5CC3B4D3 /* ResourceBundle-HSDialog-HSDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HSDialog-HSDialog-Info.plist"; sourceTree = "<group>"; };
+		0F7528242C3030C1AE22DD896A064AB1 /* yk_dialog_close_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "yk_dialog_close_icon@3x.png"; path = "HSDialog/Assets/yk_dialog_close_icon@3x.png"; sourceTree = "<group>"; };
+		1CCB3A81B2E762F8113F769F569F3733 /* Pods_HSDialog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HSDialog_Example.framework; path = "Pods-HSDialog_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E78FB5B6059BF85102F10ADCE2E979B /* Pods-HSDialog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSDialog_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		63BBD4B1A3F5CA2C39B919CEAC9E8E6A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6653D6DAEB7499AA09B8FE3EDF676BF8 /* YKDialogView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKDialogView.h; path = HSDialog/Classes/YKDialogView.h; sourceTree = "<group>"; };
+		6CD67CCFC0F18F37EA25CCE9728D81F8 /* HSDialog.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HSDialog.bundle; path = "HSDialog-HSDialog.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B99D005FB34600C34A8B293F947BB7 /* Pods-HSDialog_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSDialog_Example-frameworks.sh"; sourceTree = "<group>"; };
+		977B331E6D4163A6CDC18DD792F0CAA4 /* HSDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSDialog-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6C77016C1196E9511589ADFF9A6698B /* HSDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDialog-prefix.pch"; sourceTree = "<group>"; };
+		AC62C5C18897AAEF0FC7258CA6CBAEC7 /* Pods-HSDialog_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSDialog_Example-dummy.m"; sourceTree = "<group>"; };
+		B47614B4B71D5E36A3CFEBFB44F084B7 /* HSDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HSDialog.modulemap; sourceTree = "<group>"; };
+		B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDialog.release.xcconfig; sourceTree = "<group>"; };
+		B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDialog.debug.xcconfig; sourceTree = "<group>"; };
+		B91C4870322C82868DD50FDAA58FA19D /* Pods-HSDialog_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSDialog_Example-Info.plist"; sourceTree = "<group>"; };
+		BC12F3F79973AE1A44BA3454A587CFC0 /* YKDialogView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKDialogView.m; path = HSDialog/Classes/YKDialogView.m; sourceTree = "<group>"; };
+		BCD0C919023D39D11C37E5E098714748 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C73A16A7FC59AD997E1198F57DBBA9D5 /* Pods-HSDialog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSDialog_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C96FE3D88722A9FF2C4AB018A75C38AD /* HSDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HSDialog-Info.plist"; sourceTree = "<group>"; };
+		D48E8497693DCEB97F20BB4A2724D30B /* YKDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKDialog.m; path = HSDialog/Classes/YKDialog.m; sourceTree = "<group>"; };
+		DE7DCE36BE3F2D59C01F073C237D64A2 /* HSDialog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HSDialog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DFCF2E6035FA61720B9665C68DAA3B1F /* HSDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HSDialog.framework; path = HSDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33B89E7189823F63D21627532691CDD /* Pods-HSDialog_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSDialog_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E746CA6B511DF1B75EEB57AC0D3E0031 /* yk_dialog_close_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "yk_dialog_close_icon@2x.png"; path = "HSDialog/Assets/yk_dialog_close_icon@2x.png"; sourceTree = "<group>"; };
+		E96C35741B1BB1C9701B7EEBD3ABA9C8 /* Pods-HSDialog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HSDialog_Example.modulemap"; sourceTree = "<group>"; };
+		EEE94012E5689C20683283D8DD65C057 /* YKDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKDialog.h; path = HSDialog/Classes/YKDialog.h; sourceTree = "<group>"; };
+		F8737F8132FCC7262D9F5E95EB51819D /* HSDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDialog-umbrella.h"; sourceTree = "<group>"; };
+		FF25F3A17031900F185313689B603F2A /* Pods-HSDialog_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSDialog_Example-umbrella.h"; sourceTree = "<group>"; };
+		FFD2F2F3DAF52A24BCA139329A9FAA37 /* Pods-HSDialog_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSDialog_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC3E6ACD0DCB4FD7A65344FEC319A040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED19C8B13B1502C6417BF47C5BAA98D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8302967F668EE5547DA37164210223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00C99F027A3D18283E8E7A1DA49A703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1386F1D032FE0D9BA99983E9B5CEA4FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15B574EFE1A4E7D504A5613395AB9E67 /* HSDialog */ = {
+			isa = PBXGroup;
+			children = (
+				EEE94012E5689C20683283D8DD65C057 /* YKDialog.h */,
+				D48E8497693DCEB97F20BB4A2724D30B /* YKDialog.m */,
+				6653D6DAEB7499AA09B8FE3EDF676BF8 /* YKDialogView.h */,
+				BC12F3F79973AE1A44BA3454A587CFC0 /* YKDialogView.m */,
+				66D06AC8786E0086FB7754C59F7B7882 /* Pod */,
+				6A81B98B4C11FE79B3EEC738864BF44C /* Resources */,
+				50576A9540D9511085D3A06C2BC25FC0 /* Support Files */,
+			);
+			name = HSDialog;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4FACBF6A5D49BDFD30865F28E0558651 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9935F14AED4D94EE37658A750F22F67 /* Pods-HSDialog_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		50576A9540D9511085D3A06C2BC25FC0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B47614B4B71D5E36A3CFEBFB44F084B7 /* HSDialog.modulemap */,
+				977B331E6D4163A6CDC18DD792F0CAA4 /* HSDialog-dummy.m */,
+				C96FE3D88722A9FF2C4AB018A75C38AD /* HSDialog-Info.plist */,
+				A6C77016C1196E9511589ADFF9A6698B /* HSDialog-prefix.pch */,
+				F8737F8132FCC7262D9F5E95EB51819D /* HSDialog-umbrella.h */,
+				B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */,
+				B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */,
+				05DCFC6E1C9C9D6B2324539C5CC3B4D3 /* ResourceBundle-HSDialog-HSDialog-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HSDialog";
+			sourceTree = "<group>";
+		};
+		59FAB0643924F73E9587E001C0FFEBE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CD67CCFC0F18F37EA25CCE9728D81F8 /* HSDialog.bundle */,
+				DFCF2E6035FA61720B9665C68DAA3B1F /* HSDialog.framework */,
+				1CCB3A81B2E762F8113F769F569F3733 /* Pods_HSDialog_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66D06AC8786E0086FB7754C59F7B7882 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DE7DCE36BE3F2D59C01F073C237D64A2 /* HSDialog.podspec */,
+				BCD0C919023D39D11C37E5E098714748 /* LICENSE */,
+				63BBD4B1A3F5CA2C39B919CEAC9E8E6A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6A81B98B4C11FE79B3EEC738864BF44C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E746CA6B511DF1B75EEB57AC0D3E0031 /* yk_dialog_close_icon@2x.png */,
+				0F7528242C3030C1AE22DD896A064AB1 /* yk_dialog_close_icon@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B9935F14AED4D94EE37658A750F22F67 /* Pods-HSDialog_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E96C35741B1BB1C9701B7EEBD3ABA9C8 /* Pods-HSDialog_Example.modulemap */,
+				FFD2F2F3DAF52A24BCA139329A9FAA37 /* Pods-HSDialog_Example-acknowledgements.markdown */,
+				E33B89E7189823F63D21627532691CDD /* Pods-HSDialog_Example-acknowledgements.plist */,
+				AC62C5C18897AAEF0FC7258CA6CBAEC7 /* Pods-HSDialog_Example-dummy.m */,
+				79B99D005FB34600C34A8B293F947BB7 /* Pods-HSDialog_Example-frameworks.sh */,
+				B91C4870322C82868DD50FDAA58FA19D /* Pods-HSDialog_Example-Info.plist */,
+				FF25F3A17031900F185313689B603F2A /* Pods-HSDialog_Example-umbrella.h */,
+				3E78FB5B6059BF85102F10ADCE2E979B /* Pods-HSDialog_Example.debug.xcconfig */,
+				C73A16A7FC59AD997E1198F57DBBA9D5 /* Pods-HSDialog_Example.release.xcconfig */,
+			);
+			name = "Pods-HSDialog_Example";
+			path = "Target Support Files/Pods-HSDialog_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				FF0170F0DF6FB6C0F7D34895DDFE5194 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				59FAB0643924F73E9587E001C0FFEBE3 /* Products */,
+				4FACBF6A5D49BDFD30865F28E0558651 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0170F0DF6FB6C0F7D34895DDFE5194 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15B574EFE1A4E7D504A5613395AB9E67 /* HSDialog */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9765F778AB78334E51E9ED8B262AAEFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B61EEA7DEE7E6D3BA646ABE3782477 /* Pods-HSDialog_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D08DBCDF230DBEF7E1FD5147FC637A19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97DE15F0D560A945323FCFCA0861D56E /* HSDialog-umbrella.h in Headers */,
+				7771B4EBBEFDB0503CE37F46EB14677A /* YKDialog.h in Headers */,
+				FCEB075171D1471987DD887A38A75550 /* YKDialogView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C5BF2B7444176F9446018EA7040409C /* Pods-HSDialog_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57EC411D356F795C6BB102D22B03BD9D /* Build configuration list for PBXNativeTarget "Pods-HSDialog_Example" */;
+			buildPhases = (
+				9765F778AB78334E51E9ED8B262AAEFC /* Headers */,
+				A6CEDC892ACC683A06292C9CB0BB5420 /* Sources */,
+				C00C99F027A3D18283E8E7A1DA49A703 /* Frameworks */,
+				50491A48BFB698954E72F14950633D1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABA72AD6DD1F625D0241BB8020C62163 /* PBXTargetDependency */,
+			);
+			name = "Pods-HSDialog_Example";
+			productName = "Pods-HSDialog_Example";
+			productReference = 1CCB3A81B2E762F8113F769F569F3733 /* Pods_HSDialog_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		443C9450A1B792186930266EAC00E202 /* HSDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74E27D39EE0C29A26D3BDF104F1D32E /* Build configuration list for PBXNativeTarget "HSDialog" */;
+			buildPhases = (
+				D08DBCDF230DBEF7E1FD5147FC637A19 /* Headers */,
+				6961FD9DA52114B8BA8E29F54FD12390 /* Sources */,
+				AC3E6ACD0DCB4FD7A65344FEC319A040 /* Frameworks */,
+				CEB48C1F43F8DAFD020BB8F3CE849939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5925B74ABC6AA0006A60E45A54A6C604 /* PBXTargetDependency */,
+			);
+			name = HSDialog;
+			productName = HSDialog;
+			productReference = DFCF2E6035FA61720B9665C68DAA3B1F /* HSDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89707B8D9FFD4EBD3EF63F0307FC4A27 /* HSDialog-HSDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D2C85B58D4D36BEBD1FFE865690AD61 /* Build configuration list for PBXNativeTarget "HSDialog-HSDialog" */;
+			buildPhases = (
+				617E7F5C2EC347DB8F94561E5E32805F /* Sources */,
+				AD8302967F668EE5547DA37164210223 /* Frameworks */,
+				49C40A8147B770DC90D476634A105B5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HSDialog-HSDialog";
+			productName = "HSDialog-HSDialog";
+			productReference = 6CD67CCFC0F18F37EA25CCE9728D81F8 /* HSDialog.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 59FAB0643924F73E9587E001C0FFEBE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				443C9450A1B792186930266EAC00E202 /* HSDialog */,
+				89707B8D9FFD4EBD3EF63F0307FC4A27 /* HSDialog-HSDialog */,
+				0C5BF2B7444176F9446018EA7040409C /* Pods-HSDialog_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49C40A8147B770DC90D476634A105B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1460EFF788DE3EBB796DB5D7CC00DEA /* yk_dialog_close_icon@2x.png in Resources */,
+				F115F7CEF88C2B7C5192670AA320183F /* yk_dialog_close_icon@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50491A48BFB698954E72F14950633D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB48C1F43F8DAFD020BB8F3CE849939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005BCC570D1C63C05C619B4D495FF80C /* HSDialog.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		617E7F5C2EC347DB8F94561E5E32805F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6961FD9DA52114B8BA8E29F54FD12390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DDF4BF93167DD9976CBB3F1FA3FD9F /* HSDialog-dummy.m in Sources */,
+				728AA132E08B29EACF523E3991628ADB /* YKDialog.m in Sources */,
+				42A5D9E1C04DC9A09AFC13FA48E7E96B /* YKDialogView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CEDC892ACC683A06292C9CB0BB5420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F3A5E6A73E69274842B156BAE34E8F /* Pods-HSDialog_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5925B74ABC6AA0006A60E45A54A6C604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HSDialog-HSDialog";
+			target = 89707B8D9FFD4EBD3EF63F0307FC4A27 /* HSDialog-HSDialog */;
+			targetProxy = C581E49C2B1554A2258A578A4A0D7220 /* PBXContainerItemProxy */;
+		};
+		ABA72AD6DD1F625D0241BB8020C62163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HSDialog;
+			target = 443C9450A1B792186930266EAC00E202 /* HSDialog */;
+			targetProxy = C6E5B169EFB9AE040B13DB6DAB4ED331 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12D77CE444EFB1B538BBA3DDCDC62052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HSDialog";
+				IBSC_MODULE = HSDialog;
+				INFOPLIST_FILE = "Target Support Files/HSDialog/ResourceBundle-HSDialog-HSDialog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = HSDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		26D97DC215393FDEDB0C7A822CF5F7D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C73A16A7FC59AD997E1198F57DBBA9D5 /* Pods-HSDialog_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HSDialog_Example/Pods-HSDialog_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HSDialog_Example/Pods-HSDialog_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5264CF6B860A39BCE7914C9DF2473D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HSDialog/HSDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HSDialog/HSDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HSDialog/HSDialog.modulemap";
+				PRODUCT_MODULE_NAME = HSDialog;
+				PRODUCT_NAME = HSDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CB562B5B924E0C4AEA4EB6BE7848B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HSDialog/HSDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HSDialog/HSDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HSDialog/HSDialog.modulemap";
+				PRODUCT_MODULE_NAME = HSDialog;
+				PRODUCT_NAME = HSDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D4BFB95470D678FE71147ABFD52B751E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HSDialog";
+				IBSC_MODULE = HSDialog;
+				INFOPLIST_FILE = "Target Support Files/HSDialog/ResourceBundle-HSDialog-HSDialog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = HSDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D7BB089E1B0DD63E185E6CB87D888C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E78FB5B6059BF85102F10ADCE2E979B /* Pods-HSDialog_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HSDialog_Example/Pods-HSDialog_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HSDialog_Example/Pods-HSDialog_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57EC411D356F795C6BB102D22B03BD9D /* Build configuration list for PBXNativeTarget "Pods-HSDialog_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BB089E1B0DD63E185E6CB87D888C17 /* Debug */,
+				26D97DC215393FDEDB0C7A822CF5F7D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D2C85B58D4D36BEBD1FFE865690AD61 /* Build configuration list for PBXNativeTarget "HSDialog-HSDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BFB95470D678FE71147ABFD52B751E /* Debug */,
+				12D77CE444EFB1B538BBA3DDCDC62052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F74E27D39EE0C29A26D3BDF104F1D32E /* Build configuration list for PBXNativeTarget "HSDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB562B5B924E0C4AEA4EB6BE7848B52 /* Debug */,
+				5264CF6B860A39BCE7914C9DF2473D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
