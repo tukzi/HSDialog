@@ -1,4 +1,4 @@
-# HSDialog 移卡产品通用弹窗
+# HSDialog 通用弹窗
 
 ## 前言
 
