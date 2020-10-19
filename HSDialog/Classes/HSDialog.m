@@ -1,16 +1,16 @@
 //
-//  YKDialog.m
+//  HSDialog.m
 //  Pods
 //
 //  Created by songhe on 2020/9/3.
 //
 
-#import "YKDialog.h"
-#import "YKDialogView.h"
+#import "HSDialog.h"
+#import "HSDialogView.h"
 #import <objc/runtime.h>
 
-static const char * const ykGetDialogWindowCachedDialogs = "yk_get_dialog_window_cached_dialogs";
-static UIWindow * yk_get_dialog_window () {
+static const char * const HSGetDialogWindowCachedDialogs = "HS_get_dialog_window_cached_dialogs";
+static UIWindow * HS_get_dialog_window () {
     static UIWindow *window;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -19,24 +19,24 @@ static UIWindow * yk_get_dialog_window () {
         window.rootViewController = [UIViewController new];
         window.rootViewController.view.backgroundColor = [UIColor clearColor];
         window.rootViewController.view.userInteractionEnabled = NO;
-        objc_setAssociatedObject(window, ykGetDialogWindowCachedDialogs, [NSMutableArray new], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(window, HSGetDialogWindowCachedDialogs, [NSMutableArray new], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     });
     return window;
 }
-static YKDialog * yk_pop_cached_dialog () {
-    NSMutableArray *array = objc_getAssociatedObject(yk_get_dialog_window(), ykGetDialogWindowCachedDialogs);
-    YKDialog *dialog = [array firstObject];
+static HSDialog * HS_pop_cached_dialog () {
+    NSMutableArray *array = objc_getAssociatedObject(HS_get_dialog_window(), HSGetDialogWindowCachedDialogs);
+    HSDialog *dialog = [array firstObject];
     if (dialog) {
         [array removeObject:[array firstObject]];
     }
     return dialog;
 }
-static void yk_push_dialog (YKDialog *dialog) {
-    NSMutableArray *array = objc_getAssociatedObject(yk_get_dialog_window(), ykGetDialogWindowCachedDialogs);
+static void HS_push_dialog (HSDialog *dialog) {
+    NSMutableArray *array = objc_getAssociatedObject(HS_get_dialog_window(), HSGetDialogWindowCachedDialogs);
     [array addObject:dialog];
 }
 
-@interface YKDialog ()
+@interface HSDialog ()
 
 //标题
 @property (nonatomic, copy) NSString *title;
@@ -65,16 +65,16 @@ static void yk_push_dialog (YKDialog *dialog) {
 
 @end
 
-@implementation YKDialog
+@implementation HSDialog
 
 + (void)load {
-    YKDialog.styleColor = [self colorWithCode:0x0047BB];
-    YKDialog.timeout = 2;
-    YKDialog.alertFont = [UIFont boldSystemFontOfSize:18];
-    YKDialog.infoFont = [UIFont systemFontOfSize:16];
-    YKDialog.codeFont = [UIFont systemFontOfSize:13];
-    YKDialog.buttonFont = [UIFont systemFontOfSize:18];
-    YKDialog.animationTime = 0.25;
+    HSDialog.styleColor = [self colorWithCode:0x0047BB];
+    HSDialog.timeout = 2;
+    HSDialog.alertFont = [UIFont boldSystemFontOfSize:18];
+    HSDialog.infoFont = [UIFont systemFontOfSize:16];
+    HSDialog.codeFont = [UIFont systemFontOfSize:13];
+    HSDialog.buttonFont = [UIFont systemFontOfSize:18];
+    HSDialog.animationTime = 0.25;
 }
 
 #pragma mark - Class property
@@ -130,47 +130,47 @@ static void yk_push_dialog (YKDialog *dialog) {
 
 #pragma mark - Public method
 
-+ (YKDialog *(^)(NSString *))alert {
-    YKDialog *dialog = [[YKDialog alloc] init];
-    return ^YKDialog * (NSString *title) {
++ (HSDialog *(^)(NSString *))alert {
+    HSDialog *dialog = [[HSDialog alloc] init];
+    return ^HSDialog * (NSString *title) {
         dialog.title = title;
-        dialog.ver = YKDialog.defaultVersion;
-        dialog.style = YKDialog.styleColor;
-        dialog.duration = YKDialog.timeout;
+        dialog.ver = HSDialog.defaultVersion;
+        dialog.style = HSDialog.styleColor;
+        dialog.duration = HSDialog.timeout;
         return dialog;
     };
 }
 
-- (YKDialog *(^)(UIFont *))titleFont {
-    return ^YKDialog * (UIFont *tFont) {
+- (HSDialog *(^)(UIFont *))titleFont {
+    return ^HSDialog * (UIFont *tFont) {
         self.tFont = tFont;
         return self;
     };
 }
 
-- (YKDialog *(^)(UIColor *))titleColor {
-    return ^YKDialog * (UIColor *tColor) {
+- (HSDialog *(^)(UIColor *))titleColor {
+    return ^HSDialog * (UIColor *tColor) {
         self.tColor = tColor;
         return self;
     };
 }
 
-- (YKDialog * (^)(NSString *))info {
-    return ^ YKDialog * (NSString * infoStr) {
+- (HSDialog * (^)(NSString *))info {
+    return ^ HSDialog * (NSString * infoStr) {
         self.infoStr = infoStr;
         return self;
     };
 }
 
-- (YKDialog *(^)(UIFont *))infoFont {
-    return ^ YKDialog * (UIFont * iFont) {
+- (HSDialog *(^)(UIFont *))infoFont {
+    return ^ HSDialog * (UIFont * iFont) {
         self.iFont = iFont;
         return self;
     };
 }
 
-- (YKDialog *(^)(UIColor *))infoColor {
-    return ^YKDialog * (UIColor *iColor) {
+- (HSDialog *(^)(UIColor *))infoColor {
+    return ^HSDialog * (UIColor *iColor) {
         self.iColor = iColor;
         return self;
     };
@@ -179,8 +179,8 @@ static void yk_push_dialog (YKDialog *dialog) {
 /**
  设置弹窗的错误码
  */
-- (YKDialog * (^)(NSString *))errorCode {
-    return ^ YKDialog * (NSString * code) {
+- (HSDialog * (^)(NSString *))errorCode {
+    return ^ HSDialog * (NSString * code) {
         self.code = code;
         return self;
     };
@@ -189,8 +189,8 @@ static void yk_push_dialog (YKDialog *dialog) {
 /**
  设置弹窗的版本号
  */
-- (YKDialog * (^)(NSString *))version {
-    return ^ YKDialog * (NSString * ver) {
+- (HSDialog * (^)(NSString *))version {
+    return ^ HSDialog * (NSString * ver) {
         self.ver = ver;
         return self;
     };
@@ -199,8 +199,8 @@ static void yk_push_dialog (YKDialog *dialog) {
 /**
  设置是否隐藏x
  */
-- (YKDialog * (^)(BOOL))hiddenClose {
-    return ^ YKDialog * (BOOL hiddenClose) {
+- (HSDialog * (^)(BOOL))hiddenClose {
+    return ^ HSDialog * (BOOL hiddenClose) {
         self.isHiddenClose = hiddenClose;
         return self;
     };
@@ -209,8 +209,8 @@ static void yk_push_dialog (YKDialog *dialog) {
 /**
  设置弹窗确认按钮
  */
-- (YKDialog * (^)(NSString *, void (^)(void)))confirm {
-    return ^YKDialog * (NSString *title,void (^confirmAction)(void)) {
+- (HSDialog * (^)(NSString *, void (^)(void)))confirm {
+    return ^HSDialog * (NSString *title,void (^confirmAction)(void)) {
         self.confirmTitle = title;
         self.confirmAction = confirmAction;
         return self;
@@ -220,8 +220,8 @@ static void yk_push_dialog (YKDialog *dialog) {
 /**
  设置弹窗取消按钮
  */
-- (YKDialog * (^)(NSString *, void (^)(void)))cancel {
-    return ^YKDialog * (NSString *title,void (^cancelAction)(void)) {
+- (HSDialog * (^)(NSString *, void (^)(void)))cancel {
+    return ^HSDialog * (NSString *title,void (^cancelAction)(void)) {
         self.cancelTitle = title;
         self.cancelAction = cancelAction;
         return self;
@@ -233,12 +233,12 @@ static void yk_push_dialog (YKDialog *dialog) {
  */
 - (void (^)(void))show {
     return ^void (void) {
-        UIWindow *window = yk_get_dialog_window();
+        UIWindow *window = HS_get_dialog_window();
         if (!window.hidden) {
-            yk_push_dialog(self);
+            HS_push_dialog(self);
         }else {
             [self displayWithAnimationInWindow:NO];
-            [yk_get_dialog_window() makeKeyAndVisible];
+            [HS_get_dialog_window() makeKeyAndVisible];
         }
     };
 }
@@ -248,20 +248,20 @@ static void yk_push_dialog (YKDialog *dialog) {
  */
 - (void (^)(void))hud {
     return ^void (void) {
-        UIWindow *window = yk_get_dialog_window();
+        UIWindow *window = HS_get_dialog_window();
         if (!window.hidden) {
-            yk_push_dialog(self);
+            HS_push_dialog(self);
         }else {
             [self displayWithAnimationInWindow:YES];
-            [yk_get_dialog_window() makeKeyAndVisible];
+            [HS_get_dialog_window() makeKeyAndVisible];
         }
     };
 }
 
 #pragma mark - Showing action
 - (void)displayWithAnimationInWindow:(BOOL)isHud{
-    YKDialogView *view = [self makeViewWithBackground:yk_get_dialog_window() isHud:isHud];
-    __weak YKDialogView *weakView = view;
+    HSDialogView *view = [self makeViewWithBackground:HS_get_dialog_window() isHud:isHud];
+    __weak HSDialogView *weakView = view;
     view.didAnimateIn = ^{
         if ([weakView shouldAutoDismiss]) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -271,21 +271,21 @@ static void yk_push_dialog (YKDialog *dialog) {
     };
     view.didAnimateOut = ^{
         [weakView removeFromSuperview];
-        YKDialog *dialog = yk_pop_cached_dialog();
+        HSDialog *dialog = HS_pop_cached_dialog();
         if (dialog) {
             [dialog displayWithAnimationInWindow:isHud];
         }else {
-            yk_get_dialog_window().hidden = YES;
+            HS_get_dialog_window().hidden = YES;
         }
     };
     [view animateIn];
 }
-- (YKDialogView *)makeViewWithBackground:(UIView *)background isHud:(BOOL)isHud{
-    YKDialogView *view;
+- (HSDialogView *)makeViewWithBackground:(UIView *)background isHud:(BOOL)isHud{
+    HSDialogView *view;
     if (isHud) {
-        view = [[YKDialogTipsView alloc] init];
+        view = [[HSDialogTipsView alloc] init];
     }else {
-        YKDialogConfirmView *confirmView = [[YKDialogConfirmView alloc] init];
+        HSDialogConfirmView *confirmView = [[HSDialogConfirmView alloc] init];
         [confirmView.confirmButton setTitle:self.confirmTitle ?: @"确定" forState:UIControlStateNormal];
         [confirmView.cancelButton setTitle:self.cancelTitle ?: @"取消" forState:UIControlStateNormal];
         confirmView.confirmAction = self.confirmAction;

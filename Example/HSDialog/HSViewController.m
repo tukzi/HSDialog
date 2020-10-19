@@ -8,7 +8,7 @@
 
 #import "HSViewController.h"
 
-#import "YKDialog.h"
+#import "HSDialog.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -27,11 +27,11 @@
     [self.view addSubview:self.tableView];
     
     //设置默认样式以及通用配置-不设置会用默认的显示只需设置一次
-    YKDialog.styleColor = UIColorFromRGB(0xFF5F2E);
-    YKDialog.alertFont = [UIFont boldSystemFontOfSize:18];
-    YKDialog.infoFont = [UIFont systemFontOfSize:16];
-    YKDialog.codeFont = [UIFont systemFontOfSize:13];
-    YKDialog.buttonFont = [UIFont systemFontOfSize:18];
+    HSDialog.styleColor = UIColorFromRGB(0xFF5F2E);
+    HSDialog.alertFont = [UIFont boldSystemFontOfSize:18];
+    HSDialog.infoFont = [UIFont systemFontOfSize:16];
+    HSDialog.codeFont = [UIFont systemFontOfSize:13];
+    HSDialog.buttonFont = [UIFont systemFontOfSize:18];
     
 }
 
@@ -80,19 +80,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            YKDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的hud").errorCode(@"-100").version(@"108001").hud();
+            HSDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的hud").errorCode(@"-100").version(@"108001").hud();
         } else if (indexPath.row == 1) {
-            YKDialog.alert(@"提示").info(@"这是一个显示标题信息的hud").hud();
+            HSDialog.alert(@"提示").info(@"这是一个显示标题信息的hud").hud();
         } else if (indexPath.row == 2) {
-            YKDialog.alert(@"提示").titleFont([UIFont boldSystemFontOfSize:20]).titleColor([UIColor redColor]).info(@"这是一个显示标题信息的hud").infoFont([UIFont systemFontOfSize:16]).infoColor([UIColor blueColor]).hud();
+            HSDialog.alert(@"提示").titleFont([UIFont boldSystemFontOfSize:20]).titleColor([UIColor redColor]).info(@"这是一个显示标题信息的hud").infoFont([UIFont systemFontOfSize:16]).infoColor([UIColor blueColor]).hud();
         } else if (indexPath.row == 3) {
 
-            YKDialog.alert(@"").info(@"这是一个不显示标题，显示信息的hud").errorCode(@"-100").version(@"108001").hud();
+            HSDialog.alert(@"").info(@"这是一个不显示标题，显示信息的hud").errorCode(@"-100").version(@"108001").hud();
         }
     } else {
         if (indexPath.row == 0) {
             
-            YKDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的确认按钮取消按钮的alert").errorCode(@"-100").version(@"108001").confirm(@"确认",^{
+            HSDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的确认按钮取消按钮的alert").errorCode(@"-100").version(@"108001").confirm(@"确认",^{
                 
             }).cancel(@"取消",^{
                 
@@ -100,19 +100,19 @@
             
         } else if (indexPath.row == 1) {
             
-            YKDialog.alert(@"提示").info(@"这是一个显示标题信息确定按钮的alert").confirm(@"确认",^{
+            HSDialog.alert(@"提示").info(@"这是一个显示标题信息确定按钮的alert").confirm(@"确认",^{
             }).hiddenClose(YES).show();
             
         } else if (indexPath.row == 2) {
             
-            YKDialog.alert(@"提示").info(@"这是一个显示标题信息的alert").show();
+            HSDialog.alert(@"提示").info(@"这是一个显示标题信息的alert").show();
             
         } else if (indexPath.row == 3) {
             
-            YKDialog.alert(@"提示").titleFont([UIFont boldSystemFontOfSize:20]).titleColor([UIColor redColor]).info(@"这是一个显示标题信息的hud").infoFont([UIFont systemFontOfSize:16]).infoColor([UIColor blueColor]).show();
+            HSDialog.alert(@"提示").titleFont([UIFont boldSystemFontOfSize:20]).titleColor([UIColor redColor]).info(@"这是一个显示标题信息的hud").infoFont([UIFont systemFontOfSize:16]).infoColor([UIColor blueColor]).show();
         } else if (indexPath.row == 4) {
             
-            YKDialog.alert(@"").info(@"这是一个不显示标题，显示信息的hud").show();
+            HSDialog.alert(@"").info(@"这是一个不显示标题，显示信息的hud").show();
         }
     }
 }

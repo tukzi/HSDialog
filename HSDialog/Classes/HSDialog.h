@@ -1,5 +1,5 @@
 //
-//  YKDialog.h
+//  HSDialog.h
 //  Pods
 
 //  Created by songhe on 2020/9/3.
@@ -7,16 +7,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YKDialog : NSObject
+@interface HSDialog : NSObject
 
 #pragma mark - 默认设置
 
 /**
  样式1 ：hud
- YKDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的hud").errorCode(@"-100").version(@"108001").hud();
+ HSDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的hud").errorCode(@"-100").version(@"108001").hud();
  
  样式2 ：alert
- YKDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的确认按钮取消按钮的alert").errorCode(@"-100").version(@"108001").confirm(@"确认",^{}).cancel(@"取消",^{}).show();
+ HSDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的确认按钮取消按钮的alert").errorCode(@"-100").version(@"108001").confirm(@"确认",^{}).cancel(@"取消",^{}).show();
  
  */
 
@@ -40,57 +40,57 @@
 /**
  创建一个弹窗，参数为标题
  */
-+ (YKDialog * (^)(NSString *))alert;
++ (HSDialog * (^)(NSString *))alert;
 
 /**
  标题字体
  */
-- (YKDialog * (^)(UIFont *))titleFont;
+- (HSDialog * (^)(UIFont *))titleFont;
 
 /**
  标题颜色
  */
-- (YKDialog * (^)(UIColor *))titleColor;
+- (HSDialog * (^)(UIColor *))titleColor;
 
 /**
  描述
  */
-- (YKDialog * (^)(NSString *))info;
+- (HSDialog * (^)(NSString *))info;
 
 /**
  描述字体
  */
-- (YKDialog * (^)(UIFont *))infoFont;
+- (HSDialog * (^)(UIFont *))infoFont;
 
 /**
  描述颜色
  */
-- (YKDialog * (^)(UIColor *))infoColor;
+- (HSDialog * (^)(UIColor *))infoColor;
 
 /**
  设置弹窗的错误码
  */
-- (YKDialog * (^)(NSString *))errorCode;
+- (HSDialog * (^)(NSString *))errorCode;
 
 /**
  设置弹窗的版本号
  */
-- (YKDialog * (^)(NSString *))version;
+- (HSDialog * (^)(NSString *))version;
 
 /**
  设置是否隐藏x
  */
-- (YKDialog * (^)(BOOL))hiddenClose;
+- (HSDialog * (^)(BOOL))hiddenClose;
 
 /**
  设置弹窗确认按钮
  */
-- (YKDialog * (^)(NSString *, void (^)(void)))confirm;
+- (HSDialog * (^)(NSString *, void (^)(void)))confirm;
 
 /**
  设置弹窗取消按钮
  */
-- (YKDialog * (^)(NSString *, void (^)(void)))cancel;
+- (HSDialog * (^)(NSString *, void (^)(void)))cancel;
 
 
 /**

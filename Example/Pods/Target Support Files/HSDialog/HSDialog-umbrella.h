@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "YKDialog.h"
-#import "YKDialogView.h"
+#import "HSDialog.h"
+#import "HSDialogView.h"
 
 FOUNDATION_EXPORT double HSDialogVersionNumber;
 FOUNDATION_EXPORT const unsigned char HSDialogVersionString[];

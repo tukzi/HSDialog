@@ -1,24 +1,24 @@
 //
-//  YKDialogView.m
-//  YKDialog_Example
+//  HSDialogView.m
+//  HSDialog_Example
 //
 //  Created by songhe on 2020/10/9.
 //  Copyright © 2020 hesong_ios@163.com. All rights reserved.
 //
 
-#import "YKDialogView.h"
-#import "YKDialog.h"
+#import "HSDialogView.h"
+#import "HSDialog.h"
 
 #define StringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 || [str isEqualToString:@"<null>"] ? YES : NO )
 
-@implementation YKDialogView
+@implementation HSDialogView
 
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.numberOfLines = 0;
         _titleLabel.textColor = [UIColor blackColor];
-        _titleLabel.font = YKDialog.alertFont;
+        _titleLabel.font = HSDialog.alertFont;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_titleLabel];
     }
@@ -30,7 +30,7 @@
         _infoLabel = [[UILabel alloc] init];
         _infoLabel.numberOfLines = 0;
         _infoLabel.textColor = [UIColor blackColor];
-        _infoLabel.font = YKDialog.infoFont;
+        _infoLabel.font = HSDialog.infoFont;
         _infoLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_infoLabel];
     }
@@ -41,7 +41,7 @@
     if (!_codeLabel) {
         _codeLabel = [[UILabel alloc] init];
         _codeLabel.textColor = [UIColor colorWithRed:148/255.0 green:148/255.0 blue:148/255.0 alpha:1.0];
-        _codeLabel.font = YKDialog.codeFont;
+        _codeLabel.font = HSDialog.codeFont;
         _codeLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_codeLabel];
     }
@@ -73,13 +73,13 @@
     CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scale.fromValue = @(1.2);
     scale.toValue = @(1.0);
-    scale.duration = YKDialog.animationTime;
+    scale.duration = HSDialog.animationTime;
     scale.delegate = self;
     scale.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0 :0 :0 :1];
     CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fade.fromValue = @(0);
     fade.toValue = @(1);
-    fade.duration = YKDialog.animationTime;
+    fade.duration = HSDialog.animationTime;
     fade.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0 :0 :0 :1];
     [self.layer addAnimation:scale forKey:@"scale"];
     [self.layer addAnimation:fade forKey:@"opacity"];
@@ -92,7 +92,7 @@
     CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scale.fromValue = @(1.0);
     scale.toValue = @(1.2);
-    scale.duration = YKDialog.animationTime;
+    scale.duration = HSDialog.animationTime;
     scale.delegate = self;
     scale.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0 :0 :0 :1];
     scale.removedOnCompletion = NO;
@@ -100,7 +100,7 @@
     CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fade.fromValue = @(1);
     fade.toValue = @(0);
-    fade.duration = YKDialog.animationTime;
+    fade.duration = HSDialog.animationTime;
     fade.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0 :0 :0 :1];
     fade.removedOnCompletion = NO;
     fade.fillMode = kCAFillModeForwards;
@@ -127,7 +127,7 @@
 @end
 
 
-@implementation YKDialogTipsView
+@implementation HSDialogTipsView
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -184,7 +184,7 @@
 @end
 
 
-@implementation YKDialogConfirmView
+@implementation HSDialogConfirmView
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -251,7 +251,7 @@
     CABasicAnimation *backgroundFade = [CABasicAnimation animationWithKeyPath:@"opacity"];
     backgroundFade.fromValue = @(0);
     backgroundFade.toValue = @(1);
-    backgroundFade.duration = YKDialog.animationTime;
+    backgroundFade.duration = HSDialog.animationTime;
     backgroundFade.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0 :0 :0 :1];
     [self.background.layer addAnimation:backgroundFade forKey:@"winOpacity"];
 }
@@ -263,7 +263,7 @@
     backgroundFade.toValue = @(0);
     backgroundFade.removedOnCompletion = NO;
     backgroundFade.fillMode = kCAFillModeForwards;
-    backgroundFade.duration = YKDialog.animationTime;
+    backgroundFade.duration = HSDialog.animationTime;
     backgroundFade.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0 :0 :0 :1];
     [self.background.layer addAnimation:backgroundFade forKey:@"winOpacity"];
 }
@@ -294,7 +294,7 @@
     if (!_closeButton) {
         _closeButton = [[UIButton alloc] init];
         NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath
-                                    stringByAppendingPathComponent:@"/YKDialog.bundle"];
+                                    stringByAppendingPathComponent:@"/HSDialog.bundle"];
         NSBundle *resource_bundle = [NSBundle bundleWithPath:bundlePath];
         UIImage *image = [UIImage imageNamed:@"yk_dialog_close_icon"
                                         inBundle:resource_bundle
@@ -310,8 +310,8 @@
     if (!_confirmButton) {
         _confirmButton = [[UIButton alloc] init];
         _confirmButton.layer.cornerRadius = 3;
-        _confirmButton.titleLabel.font =  YKDialog.buttonFont;
-        _confirmButton.backgroundColor = YKDialog.styleColor;
+        _confirmButton.titleLabel.font =  HSDialog.buttonFont;
+        _confirmButton.backgroundColor = HSDialog.styleColor;
         [_confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_confirmButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_confirmButton];
@@ -323,10 +323,10 @@
     if (!_cancelButton) {
         _cancelButton = [[UIButton alloc] init];
         _cancelButton.layer.cornerRadius = 3;
-        _cancelButton.layer.borderColor = YKDialog.styleColor.CGColor;
+        _cancelButton.layer.borderColor = HSDialog.styleColor.CGColor;
         _cancelButton.layer.borderWidth = 1;
-        _cancelButton.titleLabel.font =  YKDialog.buttonFont;
-        [_cancelButton setTitleColor:YKDialog.styleColor forState:UIControlStateNormal];
+        _cancelButton.titleLabel.font =  HSDialog.buttonFont;
+        [_cancelButton setTitleColor:HSDialog.styleColor forState:UIControlStateNormal];
         [_cancelButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_cancelButton];
     }

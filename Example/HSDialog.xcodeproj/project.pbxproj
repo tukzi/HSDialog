@@ -18,8 +18,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7F73BDFBD0E366AA9872F41C /* Pods_HSDialog_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA2AA1F2ED8165DC0015469 /* Pods_HSDialog_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		9C83CD35253D718800AE648E /* YKDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83CD32253D718700AE648E /* YKDialogView.m */; };
-		9C83CD36253D718800AE648E /* YKDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83CD33253D718700AE648E /* YKDialog.m */; };
+		9C83CD35253D718800AE648E /* HSDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83CD32253D718700AE648E /* HSDialogView.m */; };
+		9C83CD36253D718800AE648E /* HSDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83CD33253D718700AE648E /* HSDialog.m */; };
 		9C83CD3B253D719400AE648E /* yk_dialog_close_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C83CD39253D719400AE648E /* yk_dialog_close_icon@3x.png */; };
 		9C83CD3C253D719400AE648E /* yk_dialog_close_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C83CD3A253D719400AE648E /* yk_dialog_close_icon@2x.png */; };
 /* End PBXBuildFile section */
@@ -51,10 +51,10 @@
 		7AC771D790204BAEED9C1AC9 /* Pods-HSDialog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSDialog_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HSDialog_Tests/Pods-HSDialog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FA2AA1F2ED8165DC0015469 /* Pods_HSDialog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSDialog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9C83CD31253D718700AE648E /* YKDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKDialog.h; sourceTree = "<group>"; };
-		9C83CD32253D718700AE648E /* YKDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKDialogView.m; sourceTree = "<group>"; };
-		9C83CD33253D718700AE648E /* YKDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKDialog.m; sourceTree = "<group>"; };
-		9C83CD34253D718800AE648E /* YKDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKDialogView.h; sourceTree = "<group>"; };
+		9C83CD31253D718700AE648E /* HSDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDialog.h; sourceTree = "<group>"; };
+		9C83CD32253D718700AE648E /* HSDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDialogView.m; sourceTree = "<group>"; };
+		9C83CD33253D718700AE648E /* HSDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDialog.m; sourceTree = "<group>"; };
+		9C83CD34253D718800AE648E /* HSDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDialogView.h; sourceTree = "<group>"; };
 		9C83CD39253D719400AE648E /* yk_dialog_close_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yk_dialog_close_icon@3x.png"; sourceTree = "<group>"; };
 		9C83CD3A253D719400AE648E /* yk_dialog_close_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yk_dialog_close_icon@2x.png"; sourceTree = "<group>"; };
 		A23841A7AAC9CDEB764E9984 /* Pods_HSDialog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSDialog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,10 +171,10 @@
 		9C83CD25253D714300AE648E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9C83CD31253D718700AE648E /* YKDialog.h */,
-				9C83CD33253D718700AE648E /* YKDialog.m */,
-				9C83CD34253D718800AE648E /* YKDialogView.h */,
-				9C83CD32253D718700AE648E /* YKDialogView.m */,
+				9C83CD31253D718700AE648E /* HSDialog.h */,
+				9C83CD33253D718700AE648E /* HSDialog.m */,
+				9C83CD34253D718800AE648E /* HSDialogView.h */,
+				9C83CD32253D718700AE648E /* HSDialogView.m */,
 			);
 			name = Classes;
 			path = ../../HSDialog/Classes;
@@ -316,11 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C83CD35253D718800AE648E /* YKDialogView.m in Sources */,
+				9C83CD35253D718800AE648E /* HSDialogView.m in Sources */,
 				6003F59E195388D20070C39A /* HSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				9C83CD36253D718800AE648E /* YKDialog.m in Sources */,
+				9C83CD36253D718800AE648E /* HSDialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSDialog'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '通用弹窗'
 
   s.description      = <<-DESC

@@ -1,29 +1,47 @@
-# HSDialog
+# HSDialog 移卡产品通用弹窗
 
-[![CI Status](https://img.shields.io/travis/hesong_ios@163.com/HSDialog.svg?style=flat)](https://travis-ci.org/hesong_ios@163.com/HSDialog)
-[![Version](https://img.shields.io/cocoapods/v/HSDialog.svg?style=flat)](https://cocoapods.org/pods/HSDialog)
-[![License](https://img.shields.io/cocoapods/l/HSDialog.svg?style=flat)](https://cocoapods.org/pods/HSDialog)
-[![Platform](https://img.shields.io/cocoapods/p/HSDialog.svg?style=flat)](https://cocoapods.org/pods/HSDialog)
+## 前言
 
-## Example
+在每个项目中，弹框的需求各种各样，HSDialog采用链式语法提供一系列的自定义显示布局为项目提供更方便的弹窗调用，省心省力! 提高开发效率!
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## 特性
 
-## Requirements
+1、info弹窗，显示若干时间消失
+元素：信息，错误码，版本号
+自定义：信息（字体，颜色）消失时间
 
-## Installation
+2、Alert弹窗，需要交互消失
+元素：标题，信息，版本号，错误码，关闭按钮，交互按钮(取消，确定)
+自定义：标题（字体,颜色）、信息（字体,颜色）, 交互按钮  (背景颜色，事件，文字)
 
-HSDialog is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+1、标题+信息+关闭按钮+版本号+错误码
+2、信息+关闭按钮
+3、标题+信息+确定按钮
+4、标题+信息+确定按钮+取消按钮
+5、标题+信息+确定按钮
+6、等等..详见demo
 
-```ruby
-pod 'HSDialog'
+## 调用方式
+
+```objective-c
+样式1 ：hud
+HSDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的hud").errorCode(@"-100").version(@"108001").hud();
+ 
+样式2 ：alert
+HSDialog.alert(@"提示").info(@"这是一个显示标题信息以及错误版本号的确认按钮取消按钮的alert").errorCode(@"-100").version(@"108001").confirm(@"确认",^{}).cancel(@"取消",^{}).show();
 ```
 
-## Author
+## 效果演示
 
-hesong_ios@163.com, hesong_ios@163.com
+更多用法见demo
 
-## License
+![演示GIF](https://github.com/tukzi/Resource/blob/master/dialog_show.gif?raw=true)
 
-HSDialog is available under the MIT license. See the LICENSE file for more info.
+## 安装
+
+pod 'HSDialog'
+
+## 作者
+
+songhe
+

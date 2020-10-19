@@ -1,6 +1,6 @@
 //
-//  YKDialogView.h
-//  YKDialog_Example
+//  HSDialogView.h
+//  HSDialog_Example
 //
 //  Created by songhe on 2020/10/9.
 //  Copyright © 2020 hesong_ios@163.com. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YKDialogView : UIView <CAAnimationDelegate>
+@interface HSDialogView : UIView <CAAnimationDelegate>
 // 背景 view
 @property (nonatomic, weak) UIView *background;
 // 标题 label
@@ -59,14 +59,14 @@
 
 
 #pragma mark - 带交互按钮的弹窗，类似HUD提示
-@interface YKDialogTipsView : YKDialogView
+@interface HSDialogTipsView : HSDialogView
 @end
 
 
 
 #pragma mark - 带交互按钮的弹窗
 
-@interface YKDialogConfirmView : YKDialogView
+@interface HSDialogConfirmView : HSDialogView
 /**
  确认按钮的回调
  */

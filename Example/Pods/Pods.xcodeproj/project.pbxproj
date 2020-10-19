@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		005BCC570D1C63C05C619B4D495FF80C /* HSDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CD67CCFC0F18F37EA25CCE9728D81F8 /* HSDialog.bundle */; };
+		0A8DA57B5D76DE9D7D39E306E517A11C /* HSDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DAF7FAAB5BA3CD4C1FDF0A598844AA /* HSDialog.m */; };
 		1386F1D032FE0D9BA99983E9B5CEA4FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		42A5D9E1C04DC9A09AFC13FA48E7E96B /* YKDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC12F3F79973AE1A44BA3454A587CFC0 /* YKDialogView.m */; };
-		728AA132E08B29EACF523E3991628ADB /* YKDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D48E8497693DCEB97F20BB4A2724D30B /* YKDialog.m */; };
-		7771B4EBBEFDB0503CE37F46EB14677A /* YKDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE94012E5689C20683283D8DD65C057 /* YKDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90DDF4BF93167DD9976CBB3F1FA3FD9F /* HSDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B331E6D4163A6CDC18DD792F0CAA4 /* HSDialog-dummy.m */; };
-		97DE15F0D560A945323FCFCA0861D56E /* HSDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8737F8132FCC7262D9F5E95EB51819D /* HSDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70DE9D3E9F4D2FFDCC55FA50DF7E2EDE /* HSDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4D2EA4E7EC12F09938DF8B17B327BE /* HSDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E20A85B721B79C234ACD8EE8F634A63 /* HSDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C8100C2CFD518FBBAAFB8E9F61233 /* HSDialogView.m */; };
+		A3F7DAAA2959C479A67EF1750DBA5001 /* HSDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26425799B023A82B331A455E04B07140 /* HSDialogView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7B61EEA7DEE7E6D3BA646ABE3782477 /* Pods-HSDialog_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF25F3A17031900F185313689B603F2A /* Pods-HSDialog_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2F3A5E6A73E69274842B156BAE34E8F /* Pods-HSDialog_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC62C5C18897AAEF0FC7258CA6CBAEC7 /* Pods-HSDialog_Example-dummy.m */; };
-		D1460EFF788DE3EBB796DB5D7CC00DEA /* yk_dialog_close_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E746CA6B511DF1B75EEB57AC0D3E0031 /* yk_dialog_close_icon@2x.png */; };
+		BD3C8CC0D9A7E21D6740A072BF7DD40A /* HSDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E9DE56E55BD71B2FD832C921684C13 /* HSDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1460EFF788DE3EBB796DB5D7CC00DEA /* yk_dialog_close_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5C0E9A5A4C80403AB0E30C35AF6359 /* yk_dialog_close_icon@2x.png */; };
+		E6FA838AE7739D1E697F27196CDB1FF0 /* HSDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 462EF86573E49F8CC7377ADEB6C17410 /* HSDialog-dummy.m */; };
 		ED19C8B13B1502C6417BF47C5BAA98D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F115F7CEF88C2B7C5192670AA320183F /* yk_dialog_close_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7528242C3030C1AE22DD896A064AB1 /* yk_dialog_close_icon@3x.png */; };
-		FCEB075171D1471987DD887A38A75550 /* YKDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6653D6DAEB7499AA09B8FE3EDF676BF8 /* YKDialogView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F115F7CEF88C2B7C5192670AA320183F /* yk_dialog_close_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0E1E8465A71DEB71FC32899987E09 /* yk_dialog_close_icon@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,35 +40,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05DCFC6E1C9C9D6B2324539C5CC3B4D3 /* ResourceBundle-HSDialog-HSDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HSDialog-HSDialog-Info.plist"; sourceTree = "<group>"; };
-		0F7528242C3030C1AE22DD896A064AB1 /* yk_dialog_close_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "yk_dialog_close_icon@3x.png"; path = "HSDialog/Assets/yk_dialog_close_icon@3x.png"; sourceTree = "<group>"; };
+		084894A034B9B072461BAAC0601CB069 /* HSDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDialog-prefix.pch"; sourceTree = "<group>"; };
+		0AB8BC46DECAF783CA3215D6B0F716F0 /* HSDialog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HSDialog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0C6E88D391F6EB1E2A74D9583F603344 /* HSDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDialog.debug.xcconfig; sourceTree = "<group>"; };
+		1BC5739F40AA04E225652BEF08F868A3 /* HSDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HSDialog.modulemap; sourceTree = "<group>"; };
 		1CCB3A81B2E762F8113F769F569F3733 /* Pods_HSDialog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HSDialog_Example.framework; path = "Pods-HSDialog_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26425799B023A82B331A455E04B07140 /* HSDialogView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HSDialogView.h; path = HSDialog/Classes/HSDialogView.h; sourceTree = "<group>"; };
+		28C4238A04BF7554E214B990DBC635E1 /* ResourceBundle-HSDialog-HSDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HSDialog-HSDialog-Info.plist"; sourceTree = "<group>"; };
+		2C4C8100C2CFD518FBBAAFB8E9F61233 /* HSDialogView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSDialogView.m; path = HSDialog/Classes/HSDialogView.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3E78FB5B6059BF85102F10ADCE2E979B /* Pods-HSDialog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSDialog_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		63BBD4B1A3F5CA2C39B919CEAC9E8E6A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6653D6DAEB7499AA09B8FE3EDF676BF8 /* YKDialogView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKDialogView.h; path = HSDialog/Classes/YKDialogView.h; sourceTree = "<group>"; };
+		462EF86573E49F8CC7377ADEB6C17410 /* HSDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSDialog-dummy.m"; sourceTree = "<group>"; };
+		560DE9F88BDD1061E1AE4EEC1546AB38 /* HSDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HSDialog-Info.plist"; sourceTree = "<group>"; };
+		5BB0E1E8465A71DEB71FC32899987E09 /* yk_dialog_close_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "yk_dialog_close_icon@3x.png"; path = "HSDialog/Assets/yk_dialog_close_icon@3x.png"; sourceTree = "<group>"; };
+		5F5C0E9A5A4C80403AB0E30C35AF6359 /* yk_dialog_close_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "yk_dialog_close_icon@2x.png"; path = "HSDialog/Assets/yk_dialog_close_icon@2x.png"; sourceTree = "<group>"; };
 		6CD67CCFC0F18F37EA25CCE9728D81F8 /* HSDialog.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HSDialog.bundle; path = "HSDialog-HSDialog.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B99D005FB34600C34A8B293F947BB7 /* Pods-HSDialog_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSDialog_Example-frameworks.sh"; sourceTree = "<group>"; };
-		977B331E6D4163A6CDC18DD792F0CAA4 /* HSDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSDialog-dummy.m"; sourceTree = "<group>"; };
+		95437381643A4CBB9050032A21A7597B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		95DAF7FAAB5BA3CD4C1FDF0A598844AA /* HSDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSDialog.m; path = HSDialog/Classes/HSDialog.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A6C77016C1196E9511589ADFF9A6698B /* HSDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDialog-prefix.pch"; sourceTree = "<group>"; };
 		AC62C5C18897AAEF0FC7258CA6CBAEC7 /* Pods-HSDialog_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSDialog_Example-dummy.m"; sourceTree = "<group>"; };
-		B47614B4B71D5E36A3CFEBFB44F084B7 /* HSDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HSDialog.modulemap; sourceTree = "<group>"; };
-		B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDialog.release.xcconfig; sourceTree = "<group>"; };
-		B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDialog.debug.xcconfig; sourceTree = "<group>"; };
 		B91C4870322C82868DD50FDAA58FA19D /* Pods-HSDialog_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSDialog_Example-Info.plist"; sourceTree = "<group>"; };
-		BC12F3F79973AE1A44BA3454A587CFC0 /* YKDialogView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKDialogView.m; path = HSDialog/Classes/YKDialogView.m; sourceTree = "<group>"; };
-		BCD0C919023D39D11C37E5E098714748 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C5E9DE56E55BD71B2FD832C921684C13 /* HSDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDialog-umbrella.h"; sourceTree = "<group>"; };
 		C73A16A7FC59AD997E1198F57DBBA9D5 /* Pods-HSDialog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSDialog_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C96FE3D88722A9FF2C4AB018A75C38AD /* HSDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HSDialog-Info.plist"; sourceTree = "<group>"; };
-		D48E8497693DCEB97F20BB4A2724D30B /* YKDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKDialog.m; path = HSDialog/Classes/YKDialog.m; sourceTree = "<group>"; };
-		DE7DCE36BE3F2D59C01F073C237D64A2 /* HSDialog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HSDialog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DFCF2E6035FA61720B9665C68DAA3B1F /* HSDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HSDialog.framework; path = HSDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33B89E7189823F63D21627532691CDD /* Pods-HSDialog_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSDialog_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E746CA6B511DF1B75EEB57AC0D3E0031 /* yk_dialog_close_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "yk_dialog_close_icon@2x.png"; path = "HSDialog/Assets/yk_dialog_close_icon@2x.png"; sourceTree = "<group>"; };
+		E91D74537F07E079EE88CA2F9E5A9A56 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E96C35741B1BB1C9701B7EEBD3ABA9C8 /* Pods-HSDialog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HSDialog_Example.modulemap"; sourceTree = "<group>"; };
-		EEE94012E5689C20683283D8DD65C057 /* YKDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKDialog.h; path = HSDialog/Classes/YKDialog.h; sourceTree = "<group>"; };
-		F8737F8132FCC7262D9F5E95EB51819D /* HSDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDialog-umbrella.h"; sourceTree = "<group>"; };
+		ED4D2EA4E7EC12F09938DF8B17B327BE /* HSDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HSDialog.h; path = HSDialog/Classes/HSDialog.h; sourceTree = "<group>"; };
+		F627491582222D5429AD37BFCCDD2883 /* HSDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSDialog.release.xcconfig; sourceTree = "<group>"; };
 		FF25F3A17031900F185313689B603F2A /* Pods-HSDialog_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSDialog_Example-umbrella.h"; sourceTree = "<group>"; };
 		FFD2F2F3DAF52A24BCA139329A9FAA37 /* Pods-HSDialog_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSDialog_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,16 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15B574EFE1A4E7D504A5613395AB9E67 /* HSDialog */ = {
+		28E04C5781F0DD05655AE1F957C6C3DB /* HSDialog */ = {
 			isa = PBXGroup;
 			children = (
-				EEE94012E5689C20683283D8DD65C057 /* YKDialog.h */,
-				D48E8497693DCEB97F20BB4A2724D30B /* YKDialog.m */,
-				6653D6DAEB7499AA09B8FE3EDF676BF8 /* YKDialogView.h */,
-				BC12F3F79973AE1A44BA3454A587CFC0 /* YKDialogView.m */,
-				66D06AC8786E0086FB7754C59F7B7882 /* Pod */,
-				6A81B98B4C11FE79B3EEC738864BF44C /* Resources */,
-				50576A9540D9511085D3A06C2BC25FC0 /* Support Files */,
+				ED4D2EA4E7EC12F09938DF8B17B327BE /* HSDialog.h */,
+				95DAF7FAAB5BA3CD4C1FDF0A598844AA /* HSDialog.m */,
+				26425799B023A82B331A455E04B07140 /* HSDialogView.h */,
+				2C4C8100C2CFD518FBBAAFB8E9F61233 /* HSDialogView.m */,
+				9982CCC75C9738F5DBF2C8927830BC8E /* Pod */,
+				DF14CC8DF1C3D3BEFF6A33CE46B55E8B /* Resources */,
+				94AC5CC94D885C9B817CE411352043A2 /* Support Files */,
 			);
 			name = HSDialog;
 			path = ../..;
@@ -123,22 +123,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		50576A9540D9511085D3A06C2BC25FC0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B47614B4B71D5E36A3CFEBFB44F084B7 /* HSDialog.modulemap */,
-				977B331E6D4163A6CDC18DD792F0CAA4 /* HSDialog-dummy.m */,
-				C96FE3D88722A9FF2C4AB018A75C38AD /* HSDialog-Info.plist */,
-				A6C77016C1196E9511589ADFF9A6698B /* HSDialog-prefix.pch */,
-				F8737F8132FCC7262D9F5E95EB51819D /* HSDialog-umbrella.h */,
-				B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */,
-				B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */,
-				05DCFC6E1C9C9D6B2324539C5CC3B4D3 /* ResourceBundle-HSDialog-HSDialog-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HSDialog";
-			sourceTree = "<group>";
-		};
 		59FAB0643924F73E9587E001C0FFEBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,23 +133,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66D06AC8786E0086FB7754C59F7B7882 /* Pod */ = {
+		94AC5CC94D885C9B817CE411352043A2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE7DCE36BE3F2D59C01F073C237D64A2 /* HSDialog.podspec */,
-				BCD0C919023D39D11C37E5E098714748 /* LICENSE */,
-				63BBD4B1A3F5CA2C39B919CEAC9E8E6A /* README.md */,
+				1BC5739F40AA04E225652BEF08F868A3 /* HSDialog.modulemap */,
+				462EF86573E49F8CC7377ADEB6C17410 /* HSDialog-dummy.m */,
+				560DE9F88BDD1061E1AE4EEC1546AB38 /* HSDialog-Info.plist */,
+				084894A034B9B072461BAAC0601CB069 /* HSDialog-prefix.pch */,
+				C5E9DE56E55BD71B2FD832C921684C13 /* HSDialog-umbrella.h */,
+				0C6E88D391F6EB1E2A74D9583F603344 /* HSDialog.debug.xcconfig */,
+				F627491582222D5429AD37BFCCDD2883 /* HSDialog.release.xcconfig */,
+				28C4238A04BF7554E214B990DBC635E1 /* ResourceBundle-HSDialog-HSDialog-Info.plist */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HSDialog";
 			sourceTree = "<group>";
 		};
-		6A81B98B4C11FE79B3EEC738864BF44C /* Resources */ = {
+		9982CCC75C9738F5DBF2C8927830BC8E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				E746CA6B511DF1B75EEB57AC0D3E0031 /* yk_dialog_close_icon@2x.png */,
-				0F7528242C3030C1AE22DD896A064AB1 /* yk_dialog_close_icon@3x.png */,
+				0AB8BC46DECAF783CA3215D6B0F716F0 /* HSDialog.podspec */,
+				E91D74537F07E079EE88CA2F9E5A9A56 /* LICENSE */,
+				95437381643A4CBB9050032A21A7597B /* README.md */,
 			);
-			name = Resources;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		B9935F14AED4D94EE37658A750F22F67 /* Pods-HSDialog_Example */ = {
@@ -212,10 +203,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF14CC8DF1C3D3BEFF6A33CE46B55E8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F5C0E9A5A4C80403AB0E30C35AF6359 /* yk_dialog_close_icon@2x.png */,
+				5BB0E1E8465A71DEB71FC32899987E09 /* yk_dialog_close_icon@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		FF0170F0DF6FB6C0F7D34895DDFE5194 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				15B574EFE1A4E7D504A5613395AB9E67 /* HSDialog */,
+				28E04C5781F0DD05655AE1F957C6C3DB /* HSDialog */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -231,13 +231,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D08DBCDF230DBEF7E1FD5147FC637A19 /* Headers */ = {
+		A86544A5430DA6F3CB0D5D177BD8E11E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97DE15F0D560A945323FCFCA0861D56E /* HSDialog-umbrella.h in Headers */,
-				7771B4EBBEFDB0503CE37F46EB14677A /* YKDialog.h in Headers */,
-				FCEB075171D1471987DD887A38A75550 /* YKDialogView.h in Headers */,
+				BD3C8CC0D9A7E21D6740A072BF7DD40A /* HSDialog-umbrella.h in Headers */,
+				70DE9D3E9F4D2FFDCC55FA50DF7E2EDE /* HSDialog.h in Headers */,
+				A3F7DAAA2959C479A67EF1750DBA5001 /* HSDialogView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +267,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F74E27D39EE0C29A26D3BDF104F1D32E /* Build configuration list for PBXNativeTarget "HSDialog" */;
 			buildPhases = (
-				D08DBCDF230DBEF7E1FD5147FC637A19 /* Headers */,
-				6961FD9DA52114B8BA8E29F54FD12390 /* Sources */,
+				A86544A5430DA6F3CB0D5D177BD8E11E /* Headers */,
+				3545227EE029C79453D6F8DFD817C619 /* Sources */,
 				AC3E6ACD0DCB4FD7A65344FEC319A040 /* Frameworks */,
 				CEB48C1F43F8DAFD020BB8F3CE849939 /* Resources */,
 			);
@@ -356,20 +356,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3545227EE029C79453D6F8DFD817C619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FA838AE7739D1E697F27196CDB1FF0 /* HSDialog-dummy.m in Sources */,
+				0A8DA57B5D76DE9D7D39E306E517A11C /* HSDialog.m in Sources */,
+				8E20A85B721B79C234ACD8EE8F634A63 /* HSDialogView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		617E7F5C2EC347DB8F94561E5E32805F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6961FD9DA52114B8BA8E29F54FD12390 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90DDF4BF93167DD9976CBB3F1FA3FD9F /* HSDialog-dummy.m in Sources */,
-				728AA132E08B29EACF523E3991628ADB /* YKDialog.m in Sources */,
-				42A5D9E1C04DC9A09AFC13FA48E7E96B /* YKDialogView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +401,7 @@
 /* Begin XCBuildConfiguration section */
 		12D77CE444EFB1B538BBA3DDCDC62052 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */;
+			baseConfigurationReference = F627491582222D5429AD37BFCCDD2883 /* HSDialog.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HSDialog";
@@ -512,7 +512,7 @@
 		};
 		5264CF6B860A39BCE7914C9DF2473D07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B794C175F0615751649350F1768C246E /* HSDialog.release.xcconfig */;
+			baseConfigurationReference = F627491582222D5429AD37BFCCDD2883 /* HSDialog.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -544,7 +544,7 @@
 		};
 		6CB562B5B924E0C4AEA4EB6BE7848B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */;
+			baseConfigurationReference = 0C6E88D391F6EB1E2A74D9583F603344 /* HSDialog.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -639,7 +639,7 @@
 		};
 		D4BFB95470D678FE71147ABFD52B751E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B80D9DBB35A79CC2F553CF47AF153C71 /* HSDialog.debug.xcconfig */;
+			baseConfigurationReference = 0C6E88D391F6EB1E2A74D9583F603344 /* HSDialog.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HSDialog";
